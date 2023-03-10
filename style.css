@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;   
+}
+h1, h2, h3 {
+    font-family: "Amatic SC", cursive;
+}
+h1 {
+    font-weight: bold;
+}
+header {
+    text-align: center;
+    background-color: rgb(26, 24, 24);
+}
+.ul {
+    font-size: 14px;
+    margin: auto;
+    border-bottom: 1px solid rgb(85, 85, 85);
+}
+.ul li {
+    color: white;
+    display: inline-block;
+    padding: 15px;
+    font-family: 'Rye', cursive;
+}
+.menu{
+    transition: all .6s;
+}
+.menu:hover{
+    background-color: rgba(126, 126, 128, 0.507);
+}
+.secao_container {
+    background-image: url(./image/planoDeFundoo.png);
+    background-size: cover;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+.container {
+    max-width: 220px;
+    text-align: center;
+    background-color: rgb(26, 24, 24);
+    margin: auto;
+    padding: 60px;
+    border-radius: 5px;
+}
+input {
+    display: inline-block;
+    margin: 8px;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    text-align: center;
+}
+button{
+    margin: 5px;
+    padding: 5px;
+}
+button:hover{
+    background-color: rgb(108, 149, 238);
+    color: aliceblue;
+    border: none;
+    padding: 7px;
+    box-shadow: 1px 1px 1px 1px rgba(108, 149, 238, 0.63);
+    border-radius: 3px;  
+}
+.container h1 {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 30px;
+}
+/* >>>>>>MAIN<<<<<< */
+.container1{
+    display: flex;
+}
+.container1_div_img {
+    height: 932px;
+    padding: 40px;
+}
+.container1_div_p {
+    max-width: 600px;
+    margin: auto;
+}
+.container1_div_p > h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.container1_div_p > p {
+    text-align: justify;
+}
+/* >>>>>>>>>>>>>MAIN receitas<<<<<<<<<< */
+#receitas h1{
+    text-align: center;
+    margin: 50px;
+}
+.receitas{
+    display: flex;
+    padding: 50px;
+    background-color: rgb(160, 157, 156);
+    justify-content: space-evenly; 
+}
+.receita{
+    height: 200px;
+    border-radius: 8px;
+    margin: 20px;
+}
+.receitas a>p{
+    text-align: center;
+    margin: 10px;
+    color: black;
+    font-family: 'Rye', cursive;
+}
+.receita:hover{
+    box-shadow: 2px 3px 3px 3px rgba(66, 66, 66, 0.63); 
+    border-radius: 8px;
+    -webkit-transform: translateX(-2px);
+    transform: translateX(-3px);
+}
+/* >>>>>>>>FOOTER<<<<<<< */
+footer{
+    background-color: rgb(26, 24, 24);
+    border-top: 2px solid rgb(85, 85, 85);
+    padding: 8px ;
+}
+.list {
+    text-align: center;
+    margin-top: 5px;
+}
+.list li {
+    color: rgb(131, 125, 125);
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 10px 20px;
+    margin: 0px 60px;
+}
+#tel {
+    background-image: url(image/whatsapp.png);
+    line-height: 0px;
+    background-repeat: no-repeat;
+}
+#email {
+    background-image: url(image/e-mail.png);
+    line-height: 0px;
+    background-repeat: no-repeat;
+}
+#in {
+    background-image: url(image/linkedin.png);
+    line-height: 0px;
+    background-repeat: no-repeat;
+}
+/* Resoluções diferentes */
+@media screen and (max-width: 1240px) {
+    .container1{
+        display: inline;
+    }
+    .container1_div_img {
+        height: 932px;
+        padding: 40px;
+        text-align: center;
+    }
+    .container1_div_p {
+        max-width: 90%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 1030px) {
+    .container1_div_img{
+        padding-bottom: 0px;
+        height: 650px ;
+    }
+    .container1_div_img img {
+       width: 300px;
+       padding-bottom: 0px;
+    }
+    .receitas{
+        
+        display: grid;
+        padding: 50px;
+        background-color: rgb(160, 157, 156);
+    }
+    footer{
+        padding: 10px;
+    }
+    .list {
+        margin: auto;
+        text-align: justify;
+    }  
+}

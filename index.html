@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/carne-crua.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <title>Churrascômetro</title>
+</head>    
+<body>
+    <header>
+        <nav>
+            <ul class="ul">
+                <a href="#contato">
+                    <li class="menu">CONTATO</li>
+                </a>
+                    <li>|</li>             
+                <a href="#historia">
+                    <li class="menu">HISTÓRIA</li>
+                </a>
+                    <li>|</li>
+                <a href="#receitas">
+                    <li class="menu">RECEITAS</li>
+                </a>
+            </ul>
+        </nav>
+        <div class="secao_container">
+            <div class="container">
+                <h1>
+                    Churrascômetro
+                </h1>
+                <input class="input" type="number" name="qtdadultos" id="adultos" placeholder="Quantidade de Adultos">
+                <input class="input" type="number" name="qtdcrianca" id="criancas" placeholder="Quantidade de Crianças">
+                <input class="input" type="number" name="hrschurrasco" id="churrasco" placeholder="Horas de Churrasco">
+                <button onclick="calcular()">Calcular</button>
+                <div id="resultado" class="resultado"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container1">
+            <div class="container1_div_img">
+                <img src="./image/cortesCarne.jpg">
+            </div>
+            <div class="container1_div_p">
+                <h1 id="historia">
+                    Origem do Churrasco
+                </h1>
+                <p>
+                    Conforme os fatos históricos, a origem da carne assada remonta ao tempo das cavernas quando o homem primitivo, ao dominar as técnicas de fazer fogo, percebeu que sua comida (a caça) ficava mais saborosa e durava por mais tempo quando assada.
+
+                    Já o churrasco, como conhecemos no Brasil, é oriundo do Pampa, região da América do Sul, que reuni Rio Grande do Sul, Uruguai e Argentina. A descoberta do churrasco é atribuída aos índios que habitavam a costa das três Américas. Eles assavam a carne ao ar livre, numa fogueira sobre pedras com auxílio de uma grelha de madeira verde, mas foi na região do grande pampa que o churrasco encontrou o seu ambiente ideal. No século XVII, essa era uma região de transporte de gado, no interior dos Sete Povos das Missões, comunidade criada pelos jesuítas no oeste do Rio Grande do sul, para reunir indígenas – em especial guaranis – na missão catequizadora. Destruída em 1768, a comunidade deixou como testemunho, além das ruínas, um belo exemplo de sociedade ideal para os homens e sua profunda influência na colonização. Os rebanhos ali criados, sem dono após as guerras por territórios, ganharam os campos e ali se multiplicaram ao sabor da natureza. Era riqueza muito vistosa para não ser aproveitada naquele Brasil – colônia que crescia atrás do ouro. Por isso, os preadores passaram a descer de Laguna e São Paulo para apresá-los. Eram os tropeiros, cuja refeição básica nas breves paradas de acampamento consistia num pedaço de carne fresca, assada ao calor das brasas no chão e temperado com um pouco de cinza.
+
+                    Os tropeiros, invernadores e seus peões tinham no gado assado sua dieta principal, agora salgado. Eles haviam copiado dos índios o costume de colocar mantas de carne sob o arreamento, no lombo do cavalo, enquanto cavalgavam. No ponto de parada, devidamente salgado pelo suor do animal, a carne estava pronta para ir ao fogo.
+
+                    Como se vê, o churrasco tornou-se fio condutor, não só rio grandense, mas também em toda a América latina, antes do descobrimento e prosseguiu nesse papel durante o terceiro ciclo da fixação à terra, a chamada “civilização do estancieiro”. Agora já era uma larguíssima fazenda organizada, na qual a peonada saía para distantes lides de gado, que duravam semanas, meses e cujo cardápio era o churrasco, nutritivo e fácil de fazer com carne à mão. Foi nesse momento que tomou a forma de típico churrasco gaúcho como o conhecemos, com fogo de chão e espetos de carne fincados na terra ao redor.
+
+                    O churrasco tradicional, do pampa, é feito em pedaços grandes de carne e em fogo de lenha no chão. Os espetos de madeira são cravados no chão, na diagonal e perto do fogo. Dali se tiram lascas das partes externas mais assadas, enquanto as mais internas ficam assando. A receita não podia ser mais simples: carne com alguma gordura – em geral costela -, coberta de sal e levada ao fogo demorado, assando primeiro de um lado e depois do outro.
+                    
+                </p>
+            </div>
+        </div>
+        <div id="receitas">
+            <h1>
+                Receitas
+            </h1>
+            <div class="receitas">
+                <a href="https://cybercook.com.br/receitas/carnes/receita-de-chuleta-assada-rapida-11321" target="_blank">
+                    <img class="receita" src="./image/bife.jpg" alt="imagem-receita">
+                    <p>
+                        Chuletinha 
+                    </p> 
+                </a>
+                <a href="https://www.receiteria.com.br/receitas-com-salame/" target="_blank">
+                    <img class="receita" src="./image/linguica.jpg" alt="imagem-receita">
+                    <p>
+                        Salame
+                    </p>
+                </a>
+                <a href="https://www.receiteria.com.br/receitas-de-picanha/" target="_blank">
+                    <img class="receita" src="./image/picanha.jpg" alt="imagem-receita">
+                    <p>
+                        Pichanha
+                    </p>
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer id="contato">
+        <ul class="list">
+            <a href="tel:48998203468"><li id="tel">(48) 99820-3468</li></a>
+            <a href="mailto:angeloaiure@hotmail.com"><li id="email">angeloaiure@hotmail.com</li></a>
+            <a target="_blank" href="https://www.linkedin.com/in/%C3%A2ngelo-luiz-bonetti-b241271a9/"><li id="in">Linkedin</li></a>
+        </ul>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
